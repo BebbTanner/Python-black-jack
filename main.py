@@ -22,18 +22,18 @@
     What conditions are needed to trigger the player phase?
 '''
 
-# Libraries
 import random
 
 random.seed()
 
-randomNum1 = random.randint(1,11)
-randomNum2 = random.randint(1,11)
+'''
+    Maybe the playerHand should be an array instead that can have more random numbers put into it.
 
-playerHand = f"{randomNum1} {randomNum2}"
-playerValue = randomNum1 + randomNum2
+    Ok so this generates two random numbers between 1 and 11, but now I need to find away to allow the user to generate another number and then add that number to the array.
+'''
+playerHand = [random.randint(1,11) for _ in range(2)]
 
 print(playerHand)
-print("Would you like another card?")
 
-playerChoice = input("What would you like to do(Hit, Fold, Stay): ")
+# print("Would you like another card?")
+# playerChoice = input("What would you like to do(Hit, Fold, Stay): ")
