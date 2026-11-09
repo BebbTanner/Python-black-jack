@@ -31,5 +31,13 @@ randomNum1 = random.randint(1,11)
 randomNum2 = random.randint(1,11)
 
 playerHand = f"{randomNum1} {randomNum2}"
+playerValue = randomNum1 + randomNum2
 
 print(playerHand)
+print(playerValue)
+
+if playerValue > 21:
+    print("You lose")
+
+if playerValue == 21:
+    print("BlackJack!")
