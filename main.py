@@ -36,6 +36,8 @@ handValue = sum(playerHand)
 
 '''
     This will generate a new card that I am going to add to the playerHand array.
+
+    This whole thing stops after one choice I think that I need to put it in a do-while loop.
 '''
 newCard = random.randint(1,11)
 
@@ -44,11 +46,15 @@ print(handValue)
 
 playerChoice = input("Would you like another card?(Y or N): ")
 
-if playerChoice == 'Y' or playerChoice == 'y':
-    playerHand.append(newCard)
-    
-    print("\nNew Hand: ", playerHand)
-    print("New value: ", sum(playerHand))
+if handValue <= 21:
+    if playerChoice == 'Y' or playerChoice == 'y':
+        playerHand.append(newCard)
+        
+        print("\nNew Hand: ", playerHand)
+        print("New value: ", sum(playerHand))
+
+elif handValue > 21:
+    print("You lost!")
 
 
 
