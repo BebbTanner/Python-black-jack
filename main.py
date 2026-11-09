@@ -15,6 +15,11 @@
     I need the card values for each of the cards.
     If it is the first ace in your hand it counts as 11.
     If it is the second ace in your hand that second one is worth one point.
+
+    What are the win conditions?
+    What are the lose conditions?
+    What conditions are needed to trigger the dealer phase?
+    What conditions are needed to trigger the player phase?
 '''
 
 # Libraries
@@ -23,3 +28,9 @@ import random
 # Global Variables
 playerHand = 0
 houseHand = 0
+
+def dealerLoop()
+
+def playerLoop()
+
+def introduction()
