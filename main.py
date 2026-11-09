@@ -16,3 +16,10 @@
     If it is the first ace in your hand it counts as 11.
     If it is the second ace in your hand that second one is worth one point.
 '''
+
+# Libraries
+import random
+
+# Global Variables
+playerHand = 0
+houseHand = 0
