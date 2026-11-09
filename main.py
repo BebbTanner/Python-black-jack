@@ -42,5 +42,15 @@ newCard = random.randint(1,11)
 print(playerHand)
 print(handValue)
 
+playerChoice = input("Would you like another card?(Y or N): ")
+
+if playerChoice == 'Y' or playerChoice == 'y':
+    playerHand.append(newCard)
+    
+    print("\nNew Hand: ", playerHand)
+    print("New value: ", sum(playerHand))
+
+
+
 # print("Would you like another card?")
 # playerChoice = input("What would you like to do(Hit, Fold, Stay): ")
