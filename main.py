@@ -44,6 +44,7 @@ newCard = random.randint(1,11)
 print(playerHand)
 print(handValue)
 
+
 playerChoice = input("Would you like another card?(Y or N): ")
 
 if handValue <= 21:
@@ -55,8 +56,6 @@ if handValue <= 21:
 
 elif handValue > 21:
     print("You lost!")
-
-
 
 # print("Would you like another card?")
 # playerChoice = input("What would you like to do(Hit, Fold, Stay): ")
