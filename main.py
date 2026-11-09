@@ -25,12 +25,11 @@
 # Libraries
 import random
 
-# Global Variables
-playerHand = 0
-houseHand = 0
+random.seed()
 
-def dealerLoop()
+randomNum1 = random.randint(1,11)
+randomNum2 = random.randint(1,11)
 
-def playerLoop()
+playerHand = f"{randomNum1} {randomNum2}"
 
-def introduction()
+print(playerHand)
