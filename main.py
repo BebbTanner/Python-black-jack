@@ -34,6 +34,11 @@ random.seed()
 playerHand = [random.randint(1,11) for _ in range(2)]
 handValue = sum(playerHand)
 
+'''
+    This will generate a new card that I am going to add to the playerHand array.
+'''
+newCard = random.randint(1,11)
+
 print(playerHand)
 print(handValue)
 
