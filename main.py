@@ -32,8 +32,10 @@ random.seed()
     Ok so this generates two random numbers between 1 and 11, but now I need to find away to allow the user to generate another number and then add that number to the array.
 '''
 playerHand = [random.randint(1,11) for _ in range(2)]
+handValue = sum(playerHand)
 
 print(playerHand)
+print(handValue)
 
 # print("Would you like another card?")
 # playerChoice = input("What would you like to do(Hit, Fold, Stay): ")
