@@ -34,10 +34,6 @@ playerHand = f"{randomNum1} {randomNum2}"
 playerValue = randomNum1 + randomNum2
 
 print(playerHand)
-print(playerValue)
+print("Would you like another card?")
 
-if playerValue > 21:
-    print("You lose")
-
-if playerValue == 21:
-    print("BlackJack!")
+playerChoice = input("What would you like to do(Hit, Fold, Stay): ")
