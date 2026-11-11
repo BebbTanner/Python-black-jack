@@ -26,19 +26,19 @@ import random
 
 random.seed()
 
+
 '''
     Maybe the playerHand should be an array instead that can have more random numbers put into it.
 
     Ok so this generates two random numbers between 1 and 11, but now I need to find away to allow the user to generate another number and then add that number to the array.
-'''
+
 playerHand = [random.randint(1,11) for _ in range(2)]
 handValue = sum(playerHand)
 
-'''
     This will generate a new card that I am going to add to the playerHand array.
 
     This whole thing stops after one choice I think that I need to put it in a do-while loop.
-'''
+
 newCard = random.randint(1,11)
 
 print(playerHand)
@@ -59,3 +59,5 @@ elif handValue > 21:
 
 # print("Would you like another card?")
 # playerChoice = input("What would you like to do(Hit, Fold, Stay): ")
+'''
+
